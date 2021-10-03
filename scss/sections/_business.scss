@@ -1,0 +1,140 @@
+.business{
+
+    .business-container{
+        
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include xl{
+            max-width: 1285px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .business-text-container{
+
+            @include xl{
+                order: 2;
+                display: grid;
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            .business-header{
+
+                padding-top: 3rem;
+                font-size: 30px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                
+                @include md{
+                    font-size: 34px;
+                    width: 60%;
+                }
+                @include xl{
+                    text-align: left;
+                    font-size: 48px;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+
+            .business-text-holder{
+
+                @include md{
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .red-number{
+
+                    font-size: 40px;
+                    
+                    @include xl{
+                        font-size: 60px;
+                        margin-top: 1rem;
+                    }
+                }
+
+                .text-holder{
+                    
+                    @include md{
+                        width: 45%;
+                    }
+                    @include xl{
+                        text-align: left; 
+                        padding-left: 2rem;
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    h1{
+
+                        font-size: 18px;
+                        font-weight: 600;
+
+                        @include xl{
+                            padding-top: 1.7rem;
+                            font-size: 24px;
+                            width: 100%;
+                            margin-top: 0;
+                        }
+                    }
+                    b{
+
+                        font-size: 18px;
+                        font-weight: 600;
+
+                        @include xl{
+                            padding-top: 1.7rem;
+                            font-size: 24px;
+                            width: 100%;
+                            margin-top: 0;
+                        }
+
+                    }
+                    p{
+
+                        width: 80%;
+                        font-size: 12px;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @media (min-width: 460px){
+                            width: 60%;
+                        }
+                        @media (min-width: 560px){
+                            width: 50%;
+                        }
+
+                        @include md{
+                            width: 80%;
+                        }
+                        @include xl{
+                            margin-left: 0;
+                            margin-right: 0;
+                            font-size: 18px;
+                            width: 100%;
+                            line-height: 1.8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .business-img{
+            
+            display: none;
+            @include xl{
+                display: flex;
+                flex: 1;
+                order: 1;
+                margin-right: 3rem;
+                padding-top: 14rem;
+            }
+        }
+    }
+}

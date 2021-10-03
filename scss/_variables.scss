@@ -1,0 +1,45 @@
+// COLORS
+$pink-color: #F23779;
+$orange-color: #FF6803;
+$yellow-color: #FFA62E;
+$head-color: #252525;
+$p-color: #57647C;
+$bg-color: #F8F9FE;
+
+
+//FONTS
+
+$main-font: 'Poppins', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+
+//BREAKPOINTS
+
+$screen-md: 760px; 
+$screen-lg: 1000px;
+$screen-xl: 1100px;
+$screen-xxl: 1550px;
+
+@mixin md {
+    @media (min-width: #{$screen-md}) {
+        @content
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$screen-lg}) {
+        @content
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$screen-xl}) {
+        @content
+    }
+}
+
+@mixin xxl {
+    @media (min-width: #{$screen-xxl}) {
+        @content
+    }
+}

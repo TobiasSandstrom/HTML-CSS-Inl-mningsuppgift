@@ -1,0 +1,100 @@
+#navbar{
+   
+    background-color: transparent;
+   
+
+    .navbar-container{
+        
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        border-bottom: 1px solid rgba(87, 100, 124, 0.15);
+        
+        @include md{
+            width: 740px;
+        }
+        @include lg{
+            width: 1090px;
+        }
+        @media (min-width: 1200px){
+            min-width: 1170px;
+        }
+        
+        .navbar-logo{
+           
+            
+            img{
+
+                margin-right: 20px;
+            }
+            b{
+
+                font-size: 20px;
+                font-weight: 700;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+
+                @media (min-width: 1200px){
+                    font-size: 30px;
+                }
+            }
+        }
+       
+        .hamburger{
+
+            display: inline-block;
+            @media (min-width: 1024px) { display: none;}
+        }
+        
+        .navbar-links{
+
+            z-index: 1;
+            display: none;
+            @media (min-width: 1024px) { display: flex; }
+                
+            li{
+                    
+                margin-left: 50px;
+                list-style: none; 
+                font-family: $secondary-font;
+                font-size: 17px;
+                font-weight: 500;
+            }
+            a{
+
+                color: $head-color;
+            }
+            
+            i{
+
+                margin: 0 30px;
+                font-size: 1.5rem;
+                align-self: center;
+            }
+            .nav-btn{
+    
+                align-self: center;
+                z-index: 1;
+                font-family: $secondary-font;
+                font-size: 17px;
+                font-weight: 500;
+                color: $head-color;
+                background-color: transparent;
+                border: 1px solid $orange-color;
+                border-radius: 8px;
+                width: 139px;
+                height: 42px;
+                
+                &:hover{
+
+                    background-color: $orange-color;
+                    color: white;
+                }
+            }
+        }
+    }
+}
